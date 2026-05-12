@@ -774,6 +774,11 @@ p { margin: 0; }
 }
 
 /* Responsive */
+@media (max-width: 767px) {
+  .footer__grid { text-align: center; }
+  .footer__socials { justify-content: center; }
+}
+
 @media (min-width: 640px) {
   .container { padding: 0 1.5rem; }
   .hero__actions { flex-direction: row; }
