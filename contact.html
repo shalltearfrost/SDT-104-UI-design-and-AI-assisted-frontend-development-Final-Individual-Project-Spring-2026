@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Alex Chen</title>
+  <meta name="description" content="Get in touch with Alex Chen for design projects and collaborations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Alex <span class="nav__logo-accent">Chen</span></a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link" data-nav-link="index.html">Home</a>
+        <a href="projects.html" class="nav__link" data-nav-link="projects.html">Projects</a>
+        <a href="about.html" class="nav__link" data-nav-link="about.html">About</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Contact</a>
+      </div>
+      <button class="nav__toggle" data-mobile-toggle aria-label="Toggle menu" aria-expanded="false">
+        <svg data-icon-menu viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg data-icon-close style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav__mobile" data-mobile-menu>
+      <a href="index.html" class="nav__mobile-link" data-nav-link="index.html">Home</a>
+      <a href="projects.html" class="nav__mobile-link" data-nav-link="projects.html">Projects</a>
+      <a href="about.html" class="nav__mobile-link" data-nav-link="about.html">About</a>
+      <a href="contact.html" class="nav__mobile-link" data-nav-link="contact.html" style="background:var(--secondary);color:var(--secondary-fg);text-align:center">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page title -->
+    <header class="page-header">
+      <div class="container fade-in">
+        <h1 class="page-header__title">Get In Touch</h1>
+        <p class="page-header__lead">Have a project in mind? Let's discuss how we can work together to bring your vision to life.</p>
+      </div>
+    </header>
+
+    <!-- Contact info and form -->
+    <section class="section section--lg">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left column: contact info -->
+          <div>
+            <h2 class="section__title" style="text-align:left;margin-bottom:1.5rem">Contact Information</h2>
+            <p style="color:var(--muted-fg);margin-bottom:2rem;line-height:1.7">Feel free to reach out through any of these channels. I typically respond within 24-48 hours.</p>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Email</div>
+                <a class="contact-info__value" href="mailto:hello@alexchen.com">hello@alexchen.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Phone</div>
+                <a class="contact-info__value" href="tel:+15551234567">+1 (555) 123-4567</a>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Location</div>
+                <div class="contact-info__value">San Francisco, CA</div>
+              </div>
+            </div>
+
+            <div class="contact-info__hours">
+              <h3 style="font-weight:600;margin-bottom:.5rem">Office Hours</h3>
+              <p style="color:var(--muted-fg);font-size:.9375rem;margin:0">
+                Monday – Friday: 9:00 AM – 6:00 PM PST<br>
+                Weekend: By appointment only
+              </p>
+            </div>
+          </div>
+
+          <!-- Right column: form -->
+          <div class="contact-form">
+            <h2 class="section__title" style="text-align:left;margin-bottom:1.5rem">Send a Message</h2>
+
+            <form data-contact-form novalidate>
+              <div class="form__row" style="grid-template-columns:1fr 1fr">
+                <div>
+                  <label class="form__label" for="name">Your Name *</label>
+                  <input class="form__input" type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
+                </div>
+                <div>
+                  <label class="form__label" for="email">Email Address *</label>
+                  <input class="form__input" type="email" id="email" name="email" required placeholder="john@example.com" autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="subject">Subject *</label>
+                <input class="form__input" type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="message">Message *</label>
+                <textarea class="form__textarea" id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+              </div>
+
+              <button class="btn btn--primary" type="submit" style="width:100%">
+                Send Message
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              <p class="form__hint">* Required fields</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing note -->
+    <section class="section section--alt">
+      <div class="container text-center" style="max-width:64rem">
+        <div class="reveal">
+          <h2 class="section__title">Looking Forward to Connecting</h2>
+          <p class="section__lead">Whether you have a project in mind, want to collaborate, or just want to say hello, I'm always excited to connect with new people and explore opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-title">Alex <span style="color:var(--secondary)">Chen</span></div>
+          <p class="footer__brand-text">Product designer crafting beautiful digital experiences with a focus on user-centered design.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Connect</h3>
+          <div class="footer__socials">
+            <a class="footer__social" href="#" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a class="footer__social" href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a class="footer__social" href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a class="footer__social" href="mailto:hello@alexchen.com" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">© <span data-current-year>2024</span> Alex Chen. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" data-back-to-top aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

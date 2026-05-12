@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Chen — Product Designer</title>
+  <meta name="description" content="Product designer crafting digital experiences that matter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Alex <span class="nav__logo-accent">Chen</span></a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link" data-nav-link="index.html">Home</a>
+        <a href="projects.html" class="nav__link" data-nav-link="projects.html">Projects</a>
+        <a href="about.html" class="nav__link" data-nav-link="about.html">About</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Contact</a>
+      </div>
+      <button class="nav__toggle" data-mobile-toggle aria-label="Toggle menu" aria-expanded="false">
+        <svg data-icon-menu viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg data-icon-close style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav__mobile" data-mobile-menu>
+      <a href="index.html" class="nav__mobile-link" data-nav-link="index.html">Home</a>
+      <a href="projects.html" class="nav__mobile-link" data-nav-link="projects.html">Projects</a>
+      <a href="about.html" class="nav__mobile-link" data-nav-link="about.html">About</a>
+      <a href="contact.html" class="nav__mobile-link" data-nav-link="contact.html" style="background:var(--secondary);color:var(--secondary-fg);text-align:center">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container fade-in text-center">
+        <span class="hero__badge">Product Designer &amp; Creative Thinker</span>
+        <h1 class="hero__title">Crafting Digital<br><span class="hero__title-accent">Experiences</span> That Matter</h1>
+        <p class="hero__lead">I design user-centered digital products that combine aesthetics with functionality, helping brands connect with their audiences in meaningful ways.</p>
+        <div class="hero__actions">
+          <a href="projects.html" class="btn btn--primary">
+            View My Work
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="about.html" class="btn btn--outline">About Me</a>
+        </div>
+
+        <!-- Stats grid -->
+        <div class="grid grid--4 stats">
+          <div class="stats__item"><div class="stats__value">50+</div><div class="stats__label">Projects Completed</div></div>
+          <div class="stats__item"><div class="stats__value">35+</div><div class="stats__label">Happy Clients</div></div>
+          <div class="stats__item"><div class="stats__value">5+</div><div class="stats__label">Years Experience</div></div>
+          <div class="stats__item"><div class="stats__value">15+</div><div class="stats__label">Awards Won</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured work -->
+    <section class="section section--lg section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Featured Work</h2>
+          <p class="section__lead">A selection of my recent projects showcasing design excellence and innovation</p>
+        </div>
+
+        <div class="grid grid--projects">
+          <a class="card reveal" href="projects.html">
+            <div class="card__image-wrap">
+              <img class="card__image" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1080&q=80" alt="E-Commerce Redesign" loading="lazy">
+              <div class="card__overlay"></div>
+            </div>
+            <div class="card__body">
+              <div class="card__category">Web Design</div>
+              <h3 class="card__title">E-Commerce Redesign</h3>
+              <p class="card__text">Complete UI/UX overhaul for a modern fashion retailer, increasing conversion by 45%.</p>
+            </div>
+          </a>
+
+          <a class="card reveal" href="projects.html">
+            <div class="card__image-wrap">
+              <img class="card__image" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1080&q=80" alt="Mobile Banking App" loading="lazy">
+              <div class="card__overlay"></div>
+            </div>
+            <div class="card__body">
+              <div class="card__category">Mobile Design</div>
+              <h3 class="card__title">Mobile Banking App</h3>
+              <p class="card__text">Intuitive banking experience with advanced security features and seamless transactions.</p>
+            </div>
+          </a>
+
+          <a class="card reveal" href="projects.html">
+            <div class="card__image-wrap">
+              <img class="card__image" src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1080&q=80" alt="Brand Identity System" loading="lazy">
+              <div class="card__overlay"></div>
+            </div>
+            <div class="card__body">
+              <div class="card__category">Branding</div>
+              <h3 class="card__title">Brand Identity System</h3>
+              <p class="card__text">Comprehensive brand identity for a sustainable lifestyle startup, from logo to guidelines.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center" style="margin-top:3rem">
+          <a href="projects.html" class="btn btn--outline-accent btn--sm">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--lg">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">What I Do</h2>
+          <p class="section__lead">Specialized in creating comprehensive digital experiences</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="feature reveal">
+            <div class="feature__icon">
+              <!-- Palette icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            </div>
+            <h3 class="feature__title">UI/UX Design</h3>
+            <p class="feature__text">Creating intuitive and beautiful user interfaces</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature__icon">
+              <!-- Code icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="feature__title">Prototyping</h3>
+            <p class="feature__text">Interactive prototypes with Figma and Framer</p>
+          </div>
+          <div class="feature reveal">
+            <div class="feature__icon">
+              <!-- Sparkles icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8L20 10l-5.8 1.9L12 18l-1.9-5.8L4 10l5.8-1.9z"/></svg>
+            </div>
+            <h3 class="feature__title">Design Systems</h3>
+            <p class="feature__text">Scalable component libraries and guidelines</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client testimonials -->
+    <section class="section section--lg section--alt">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Client Testimonials</h2>
+          <p class="section__lead">What clients say about working with me</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="testimonial reveal">
+            <div class="testimonial__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial__quote">"Alex transformed our product vision into a stunning reality. The attention to detail and user-centered approach exceeded our expectations."</p>
+            <div class="testimonial__name">Sarah Johnson</div>
+            <div class="testimonial__role">CEO, TechStart</div>
+          </div>
+
+          <div class="testimonial reveal">
+            <div class="testimonial__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial__quote">"Working with Alex was a game-changer for our mobile app. The design is not only beautiful but also significantly improved our user retention."</p>
+            <div class="testimonial__name">Michael Chen</div>
+            <div class="testimonial__role">Product Manager, FinanceHub</div>
+          </div>
+
+          <div class="testimonial reveal">
+            <div class="testimonial__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial__quote">"Our brand identity went from generic to exceptional. Alex truly understood our mission and translated it into a compelling visual language."</p>
+            <div class="testimonial__name">Emily Rodriguez</div>
+            <div class="testimonial__role">Founder, EcoLife</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section section--lg">
+      <div class="container" style="max-width:64rem">
+        <div class="cta-box reveal">
+          <h2 class="section__title">Let's Work Together</h2>
+          <p class="section__lead" style="margin-bottom:2rem">Have a project in mind? I'd love to hear about it and discuss how we can bring your vision to life.</p>
+          <a href="contact.html" class="btn btn--primary">
+            Get In Touch
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-title">Alex <span style="color:var(--secondary)">Chen</span></div>
+          <p class="footer__brand-text">Product designer crafting beautiful digital experiences with a focus on user-centered design.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Connect</h3>
+          <div class="footer__socials">
+            <a class="footer__social" href="#" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a class="footer__social" href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="footer__social" href="#" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a class="footer__social" href="mailto:hello@alexchen.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">© <span data-current-year>2024</span> Alex Chen. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating back-to-top control -->
+  <button class="back-to-top" data-back-to-top aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

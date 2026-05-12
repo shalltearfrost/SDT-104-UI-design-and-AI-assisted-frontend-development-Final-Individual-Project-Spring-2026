@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Alex Chen</title>
+  <meta name="description" content="A collection of my design work: web, mobile and branding projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Alex <span class="nav__logo-accent">Chen</span></a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link" data-nav-link="index.html">Home</a>
+        <a href="projects.html" class="nav__link" data-nav-link="projects.html">Projects</a>
+        <a href="about.html" class="nav__link" data-nav-link="about.html">About</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Contact</a>
+      </div>
+      <button class="nav__toggle" data-mobile-toggle aria-label="Toggle menu" aria-expanded="false">
+        <svg data-icon-menu viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg data-icon-close style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav__mobile" data-mobile-menu>
+      <a href="index.html" class="nav__mobile-link" data-nav-link="index.html">Home</a>
+      <a href="projects.html" class="nav__mobile-link" data-nav-link="projects.html">Projects</a>
+      <a href="about.html" class="nav__mobile-link" data-nav-link="about.html">About</a>
+      <a href="contact.html" class="nav__mobile-link" data-nav-link="contact.html" style="background:var(--secondary);color:var(--secondary-fg);text-align:center">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page title -->
+    <header class="page-header">
+      <div class="container fade-in">
+        <h1 class="page-header__title">My Projects</h1>
+        <p class="page-header__lead">A collection of my design work spanning web, mobile, and brand experiences</p>
+      </div>
+    </header>
+
+    <!-- Filter bar: categories + search -->
+    <section class="filters">
+      <div class="container">
+        <div class="filters__row">
+          <!-- Category chips -->
+          <div class="filters__categories" data-projects-chips></div>
+
+          <div class="filters__search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" placeholder="Search projects..." data-projects-search aria-label="Search projects">
+          </div>
+        </div>
+        <div class="filters__count" data-projects-count></div>
+      </div>
+    </section>
+
+    <!-- Projects grid -->
+    <section class="section section--lg">
+      <div class="container">
+        <div class="grid grid--projects" data-projects-grid></div>
+
+        <!-- Empty state -->
+        <div class="filters__empty" data-projects-empty hidden>
+          <p>No projects found matching your criteria.</p>
+          <button type="button" class="btn btn--primary btn--sm" data-clear-filters>Clear Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section section--alt">
+      <div class="container" style="max-width:64rem">
+        <div class="text-center reveal">
+          <h2 class="section__title">Interested in Working Together?</h2>
+          <p class="section__lead" style="margin-bottom:2rem">Let's create something amazing for your business</p>
+          <a href="contact.html" class="btn btn--primary">Start a Project</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-title">Alex <span style="color:var(--secondary)">Chen</span></div>
+          <p class="footer__brand-text">Product designer crafting beautiful digital experiences with a focus on user-centered design.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Connect</h3>
+          <div class="footer__socials">
+            <a class="footer__social" href="#" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a class="footer__social" href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a class="footer__social" href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a class="footer__social" href="mailto:hello@alexchen.com" aria-label="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">© <span data-current-year>2024</span> Alex Chen. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" data-back-to-top aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
